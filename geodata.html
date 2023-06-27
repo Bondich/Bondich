@@ -1,32 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Çàïðîñ ãåîëîêàöèè</title>
-    <style>
-        body {
-            text-align: center;
-            padding-top: 100px;
-        }
-    </style>
+  <title>Моя HTML-страница</title>
 </head>
 <body>
-    <h1>Çàïðîñ ãåîëîêàöèè</h1>
-    <button onclick="getLocation()">Ïîëó÷èòü ãåîëîêàöèþ</button>
-
-    <script>
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                alert("Âàø áðàóçåð íå ïîääåðæèâàåò ãåîëîêàöèþ.");
-            }
-        }
-
-        function showPosition(position) {
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            alert("Âàøà ãåîëîêàöèÿ:\nØèðîòà: " + latitude + "\nÄîëãîòà: " + longitude);
-        }
-    </script>
+  <h1>Привет, мир!</h1>
+  <p>Это моя первая HTML-страница.</p>
 </body>
 </html>
