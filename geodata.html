@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Запрос геолокации</title>
+    <title>Г‡Г ГЇГ°Г®Г± ГЈГҐГ®Г«Г®ГЄГ Г¶ГЁГЁ</title>
     <style>
         body {
             text-align: center;
@@ -10,22 +10,22 @@
     </style>
 </head>
 <body>
-    <h1>Запрос геолокации</h1>
-    <button onclick="getLocation()">Получить геолокацию</button>
+    <h1>Г‡Г ГЇГ°Г®Г± ГЈГҐГ®Г«Г®ГЄГ Г¶ГЁГЁ</h1>
+    <button onclick="getLocation()">ГЏГ®Г«ГіГ·ГЁГІГј ГЈГҐГ®Г«Г®ГЄГ Г¶ГЁГѕ</button>
 
     <script>
         function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
             } else {
-                alert("Ваш браузер не поддерживает геолокацию.");
+                alert("Г‚Г Гё ГЎГ°Г ГіГ§ГҐГ° Г­ГҐ ГЇГ®Г¤Г¤ГҐГ°Г¦ГЁГўГ ГҐГІ ГЈГҐГ®Г«Г®ГЄГ Г¶ГЁГѕ.");
             }
         }
 
         function showPosition(position) {
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            alert("Ваша геолокация:\nШирота: " + latitude + "\nДолгота: " + longitude);
+            alert("Г‚Г ГёГ  ГЈГҐГ®Г«Г®ГЄГ Г¶ГЁГї:\nГГЁГ°Г®ГІГ : " + latitude + "\nГ„Г®Г«ГЈГ®ГІГ : " + longitude);
         }
     </script>
 </body>
